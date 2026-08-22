@@ -1,10 +1,445 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dharma Daily</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f3ea;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 20px 15px 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #7b3f00;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            margin-top: 6px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .date {
+            text-align: center;
+            color: #7b3f00;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #7b3f00;
+            font-size: 21px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .panchang-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .panchang-row:last-child {
+            border-bottom: none;
+        }
+
+        .panchang-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .panchang-value {
+            text-align: right;
+            color: #333;
+        }
+
+        .action {
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-left: 6px solid #999;
+            background: #fafafa;
+        }
+
+        .action:last-child {
+            margin-bottom: 0;
+        }
+
+        .category {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 4px;
+        }
+
+        .item {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .effect {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Effect colours */
+
+        .recommended {
+            border-left-color: #2e7d32;
+            background: #f1f8f2;
+        }
+
+        .recommended .effect {
+            color: #1b5e20;
+            background: #c8e6c9;
+        }
+
+        .do {
+            border-left-color: #388e3c;
+            background: #f3f9f3;
+        }
+
+        .do .effect {
+            color: #1b5e20;
+            background: #dcedc8;
+        }
+
+        .preferred {
+            border-left-color: #1976d2;
+            background: #f1f7fd;
+        }
+
+        .preferred .effect {
+            color: #0d47a1;
+            background: #bbdefb;
+        }
+
+        .optional {
+            border-left-color: #7e57c2;
+            background: #f6f2fb;
+        }
+
+        .optional .effect {
+            color: #4527a0;
+            background: #d1c4e9;
+        }
+
+        .not-recommended {
+            border-left-color: #f57c00;
+            background: #fff8ef;
+        }
+
+        .not-recommended .effect {
+            color: #e65100;
+            background: #ffe0b2;
+        }
+
+        .avoid {
+            border-left-color: #d32f2f;
+            background: #fff5f5;
+        }
+
+        .avoid .effect {
+            color: #b71c1c;
+            background: #ffcdd2;
+        }
+
+        .prohibited {
+            border-left-color: #8e0000;
+            background: #fff0f0;
+        }
+
+        .prohibited .effect {
+            color: #7f0000;
+            background: #ef9a9a;
+        }
+
+        .empty {
+            text-align: center;
+            color: #777;
+            padding: 15px 0;
+        }
+
+        .error {
+            text-align: center;
+            color: #b00020;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 480px) {
+
+            .container {
+                padding: 15px 10px 30px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .panchang-row {
+                gap: 10px;
+            }
+
+            .panchang-value {
+                max-width: 55%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>🕉 Dharma Daily</h1>
-    <p>Website setup successful.</p>
+
+<div class="container">
+
+    <header>
+        <h1>🕉 Dharma Daily</h1>
+        <div class="subtitle">
+            Daily Panchang & Guidance
+        </div>
+    </header>
+
+    <div id="content">
+        Loading today's information...
+    </div>
+
+    <div class="footer">
+        Dharma Daily
+    </div>
+
+</div>
+
+<script>
+
+function effectClass(effect) {
+
+    const classes = {
+        "Recommended": "recommended",
+        "Do": "do",
+        "Preferred": "preferred",
+        "Optional": "optional",
+        "Not Recommended": "not-recommended",
+        "Avoid": "avoid",
+        "Prohibited": "prohibited"
+    };
+
+    return classes[effect] || "";
+}
+
+
+async function loadToday() {
+
+    try {
+
+        /*
+         * Cache-busting parameter prevents the browser
+         * from showing an old today.json.
+         */
+        const response = await fetch(
+            "today.json?time=" + new Date().getTime()
+        );
+
+        if (!response.ok) {
+            throw new Error("Could not load today.json");
+        }
+
+        const data = await response.json();
+
+        let html = "";
+
+        // ------------------------------------------------
+        // DATE
+        // ------------------------------------------------
+
+        html += `
+            <div class="card">
+                <div class="date">
+                    ${data.date}
+                </div>
+            </div>
+        `;
+
+
+        // ------------------------------------------------
+        // PANCHANG
+        // ------------------------------------------------
+
+        html += `
+            <div class="card">
+
+                <h2>Today's Panchang</h2>
+        `;
+
+        if (data.panchang && Object.keys(data.panchang).length > 0) {
+
+            for (const [key, value] of Object.entries(data.panchang)) {
+
+                html += `
+                    <div class="panchang-row">
+
+                        <div class="panchang-label">
+                            ${key}
+                        </div>
+
+                        <div class="panchang-value">
+                            ${value}
+                        </div>
+
+                    </div>
+                `;
+            }
+
+        } else {
+
+            html += `
+                <div class="empty">
+                    No Panchang information available.
+                </div>
+            `;
+        }
+
+        html += `
+            </div>
+        `;
+
+
+        // ------------------------------------------------
+        // ACTIONS
+        // ------------------------------------------------
+
+        html += `
+            <div class="card">
+
+                <h2>Today's Guidance</h2>
+        `;
+
+        if (!data.actions || data.actions.length === 0) {
+
+            html += `
+                <div class="empty">
+                    No applicable rules today.
+                </div>
+            `;
+
+        } else {
+
+            for (const action of data.actions) {
+
+                const effect = action.effect || "";
+                const cssClass = effectClass(effect);
+
+                html += `
+                    <div class="action ${cssClass}">
+
+                        <div class="category">
+                            ${action.category || ""}
+                        </div>
+
+                        <div class="item">
+                            ${action.item || ""}
+                        </div>
+
+                        <div class="effect">
+                            ${effect}
+                        </div>
+
+                        <div class="description">
+                            ${action.description || ""}
+                        </div>
+
+                    </div>
+                `;
+            }
+        }
+
+        html += `
+            </div>
+        `;
+
+
+        document.getElementById("content").innerHTML = html;
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        document.getElementById("content").innerHTML = `
+            <div class="error">
+                Unable to load today's information.
+                <br><br>
+                Please make sure today.json is available.
+            </div>
+        `;
+    }
+}
+
+
+// Load immediately
+loadToday();
+
+
+// Refresh every 5 minutes
+setInterval(loadToday, 5 * 60 * 1000);
+
+</script>
+
 </body>
 </html>
