@@ -1,19 +1,24 @@
 {
   "date": "2026-08-22",
   "panchang": {
-    "Vara": "Friday",
-    "Tithi": "7",
-    "Masa": "Shravana",
-    "Ritu": "Varsha",
-    "Nakshatra": "Jyeshtha",
-    "Paksha": "Shukla"
+    "Sunrise": "05:56",
+    "Sunset": "18:56",
+    "Moonrise": "04:17",
+    "Moonset": "17:14",
+    "Tithi": "Tritiya upto 08:36",
+    "Nakshatra": "Jyeshtha upto 09:27; Mula",
+    "Yoga": "Vishkumbha upto 21:04",
+    "Karana": "Garaja upto 08:36; Vanija upto 21:04",
+    "Weekday": "Saturday",
+    "Paksha": "Shukla Paksha",
+    "Moonsign": "Vrishchika",
+    "Sunsign": "Simha",
+    "Rahu Kalam": "09:09-10:50",
+    "Yamaganda": "14:15-15:56",
+    "Gulikai Kalam": "05:56-07:37",
+    "Abhijit": "12:00-12:53",
+    "Amrit Kalam": "08:36-10:17",
+    "Festivals": "Test Panchang"
   },
-  "actions": [
-    {
-      "category": "Test",
-      "item": "Six Conditions",
-      "effect": "Recommended",
-      "description": "Six Conditions is recommended."
-    }
-  ]
+  "actions": []
 }
