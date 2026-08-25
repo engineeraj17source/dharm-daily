@@ -27,12 +27,6 @@
       "item": "eat",
       "effect": "Do",
       "description": "Do eat."
-    },
-    {
-      "category": "Test vara",
-      "item": "snaan",
-      "effect": "Do",
-      "description": "Do snaan."
     }
   ]
 }
