@@ -14,5 +14,12 @@
     "Gulikai Kalam": "12:23 PM to 02:00 PM",
     "Festivals cl": "2nd Chaturmasa Begins🐄yogurt prohibition fastFourth Mangala Gauri VratBhauma Pradosh Vrat"
   },
-  "actions": []
+  "actions": [
+    {
+      "category": "Test",
+      "item": "Abhyang",
+      "effect": "Do",
+      "description": "Do Abhyang."
+    }
+  ]
 }
