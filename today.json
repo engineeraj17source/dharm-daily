@@ -27,6 +27,12 @@
       "item": "eat",
       "effect": "Do",
       "description": "Do eat."
+    },
+    {
+      "category": "Heigine",
+      "item": "Haircut",
+      "effect": "Do",
+      "description": "Do Haircut."
     }
   ]
 }
