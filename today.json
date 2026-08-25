@@ -8,7 +8,7 @@
     "Tithi": "Dwadashi",
     "Tithi Upto": "06:20 AM",
     "Nakshatra": "Uttara Ashadha upto 10:51 PMTrayodashiShravana",
-    "Vaar": "Mangalawara",
+    "Vara": "Mangalawara",
     "Amrit Kalam": "03:49 PM to 05:34 PM",
     "Rahu Kalam": "03:37 PM to 05:14 PM",
     "Yamaganda": "09:09 AM to 10:46 AMAadal Yoga12:36 AM, Aug 26 to 05:56 AM, Aug 26Vidaal Yoga04:17 PM to 12:36 AM, Aug 26",
@@ -23,10 +23,16 @@
       "description": "Do Abhyang."
     },
     {
-      "category": "Test2",
+      "category": "Amla",
       "item": "eat",
       "effect": "Do",
       "description": "Do eat."
+    },
+    {
+      "category": "Test vara",
+      "item": "snaan",
+      "effect": "Do",
+      "description": "Do snaan."
     }
   ]
 }
