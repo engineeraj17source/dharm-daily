@@ -1,19 +1,19 @@
 {
-  "date": "2026-08-25",
+  "date": "2026-08-26",
   "panchang": {
-    "Todaysummary": "27, ShravanaShukla Paksha, Dwadashi2083 Siddharthi, Vikrama SamvataNew Delhi, India25August 2026Tuesday 2nd Chaturmasa Begins, Fourth Mangala Gauri Vrat, Bhauma Pradosh Vrat, Tri Pushkara Yoga, Ravi Yoga, Aadal Yoga, Vidaal Yoga",
-    "sunrise": "5:55:00 AM",
-    "sunset clean": "6:51:00 PM",
+    "Todaysummary": "28, ShravanaShukla Paksha, Trayodashi2083 Siddharthi, Vikrama SamvataNew Delhi, India26August 2026Wednesday 2nd Chaturmasa Day 2, Rigveda Upakarma, Onam, Ravi Yoga, Aadal Yoga",
+    "sunrise": "5:56:00 AM",
+    "sunset clean": "6:49:00 PM",
     "Paksha": "Shukla",
-    "Tithi": "Dwadashi",
-    "Tithi Upto": "06:20 AM",
-    "Nakshatra": "Uttara Ashadha upto 10:51 PMTrayodashiShravana",
-    "Vara": "Mangalawara",
-    "Amrit Kalam": "03:49 PM to 05:34 PM",
-    "Rahu Kalam": "03:37 PM to 05:14 PM",
-    "Yamaganda": "09:09 AM to 10:46 AMAadal Yoga12:36 AM, Aug 26 to 05:56 AM, Aug 26Vidaal Yoga04:17 PM to 12:36 AM, Aug 26",
-    "Gulikai Kalam": "12:23 PM to 02:00 PM",
-    "Festivals": "2nd Chaturmasa Begins🐄yogurt prohibition fastFourth Mangala Gauri VratBhauma Pradosh Vrat"
+    "Tithi": "Trayodashi",
+    "Tithi Upto": "07:59 AM",
+    "Nakshatra": "Shravana upto 12:48 AM, Aug 27ChaturdashiDhanishtha",
+    "Vara": "Budhawara",
+    "Amrit Kalam": "01:33 PM to 03:17 PM",
+    "Rahu Kalam": "12:23 PM to 01:59 PM",
+    "Yamaganda": "07:33 AM to 09:09 AMAadal Yoga05:56 AM to 12:48 AM, Aug 27",
+    "Gulikai Kalam": "10:46 AM to 12:23 PM",
+    "Festivals": "2nd Chaturmasa Day 2🐄yogurt prohibition fastRigveda UpakarmaOnam"
   },
   "actions": [
     {
@@ -27,6 +27,12 @@
       "item": "eat",
       "effect": "Do",
       "description": "Do eat."
+    },
+    {
+      "category": "Heigine",
+      "item": "Haircut",
+      "effect": "Do",
+      "description": "Do Haircut."
     }
   ]
 }
