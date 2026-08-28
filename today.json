@@ -1,19 +1,19 @@
 {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "panchang": {
-    "Todaysummary": "29, ShravanaShukla Paksha, Chaturdashi2083 Siddharthi, Vikrama SamvataNew Delhi, India27August 2026Thursday 2nd Chaturmasa Day 3, Yajurveda Upakarma, Hayagriva Jayanti, Shravana Purnima Vrat, Anvadhan, Bhadra, Panchaka, Aadal Yoga",
-    "sunrise": "5:56:00 AM",
-    "sunset clean": "6:48:00 PM",
+    "Todaysummary": "30, ShravanaShukla Paksha, Purnima2083 Siddharthi, Vikrama SamvataNew Delhi, India28August 2026Friday 2nd Chaturmasa Day 4, Varalakshmi Vrat, Raksha Bandhan, Rakhi, Gayatri Jayanti, Gayatri Japam, Narali Purnima, Sanskrit Diwas, Chandra Grahan *Anshika, Shravana Purnima, Ishti, Panchaka, Aadal Yoga, Vidaal Yoga",
+    "sunrise": "5:57:00 AM",
+    "sunset clean": "6:47:00 PM",
     "Paksha": "Shukla",
-    "Tithi": "Chaturdashi",
-    "Tithi Upto": "09:08 AM",
-    "Nakshatra": "Dhanishtha upto 02:15 AM, Aug 28PurnimaShatabhisha",
-    "Vara": "Guruwara",
-    "Amrit Kalam": "03:13 PM to 04:55 PM",
-    "Rahu Kalam": "01:59 PM to 03:35 PM",
-    "Yamaganda": "05:56 AM to 07:33 AMAadal Yoga02:15 AM, Aug 28 to 05:57 AM, Aug 28",
-    "Gulikai Kalam": "09:09 AM to 10:46 AM03:23 PM to 04:14 PM",
-    "Festivals": "2nd Chaturmasa Day 3🐄yogurt prohibition fastYajurveda UpakarmaHayagriva JayantiShravana Purnima VratAnvadhan"
+    "Tithi": "Purnima",
+    "Tithi Upto": "09:48 AM",
+    "Nakshatra": "Shatabhisha upto 03:13 AM, Aug 29PratipadaPurva Bhadrapada",
+    "Vara": "Shukrawara",
+    "Amrit Kalam": "07:44 PM to 09:23 PM",
+    "Rahu Kalam": "10:46 AM to 12:22 PM",
+    "Yamaganda": "03:35 PM to 05:11 PMAadal Yoga05:57 AM to 03:13 AM, Aug 29Vidaal Yoga03:13 AM, Aug 29 to 05:57 AM, Aug 29",
+    "Gulikai Kalam": "07:33 AM to 09:10 AM",
+    "Festivals": "2nd Chaturmasa Day 4🐄yogurt prohibition fastVaralakshmi VratRaksha BandhanRakhiGayatri JayantiGayatri JapamNarali PurnimaSanskrit DiwasChandra Grahan *AnshikaShravana PurnimaIshti"
   },
   "actions": [
     {
@@ -21,12 +21,6 @@
       "item": "Abhyang",
       "effect": "Do",
       "description": "Do Abhyang."
-    },
-    {
-      "category": "Amla",
-      "item": "eat",
-      "effect": "Do",
-      "description": "Do eat."
     }
   ]
 }
