@@ -15,12 +15,5 @@
     "Gulikai Kalam": "03:33 PM to 05:09 PM",
     "Festivals": "2nd Chaturmasa Day 6🐄yogurt prohibition fast"
   },
-  "actions": [
-    {
-      "category": "Amla",
-      "item": "eat",
-      "effect": "Do",
-      "description": "Do eat."
-    }
-  ]
+  "actions": []
 }
