@@ -1,19 +1,32 @@
 {
-  "date": "2026-08-30",
+  "date": "2026-08-31",
   "panchang": {
-    "Todaysummary": "02, BhadrapadaKrishna Paksha, Dwitiya2083 Siddharthi, Vikrama SamvataNew Delhi, India30August 2026Sunday 2nd Chaturmasa Day 6, Bhadra, Panchaka, Ganda Moola, Sarvartha Siddhi Yoga",
+    "Todaysummary": "03, BhadrapadaKrishna Paksha, Tritiya2083 Siddharthi, Vikrama SamvataNew Delhi, India31August 2026Monday 2nd Chaturmasa Day 7, Kajari Teej, Bahula Chaturthi, Maha Sangada Hara Chathurti, Heramba Sankashti, Bhadra, Panchaka, Ganda Moola",
     "sunrise": "5:58:00 AM",
-    "sunset clean": "6:45:00 PM",
+    "sunset clean": "6:44:00 PM",
     "Paksha": "Krishna",
-    "Tithi": "Dwitiya",
-    "Tithi Upto": "09:36 AM",
-    "Nakshatra": "Uttara Bhadrapada upto 03:44 AM, Aug 31TritiyaRevati",
-    "Vara": "Raviwara",
-    "Amrit Kalam": "10:56 PM to 12:32 AM, Aug 31",
-    "Rahu Kalam": "05:09 PM to 06:45 PM",
-    "Yamaganda": "12:22 PM to 01:57 PM",
-    "Gulikai Kalam": "03:33 PM to 05:09 PM",
-    "Festivals": "2nd Chaturmasa Day 6🐄yogurt prohibition fast"
+    "Tithi": "Tritiya",
+    "Tithi Upto": "08:50 AM",
+    "Nakshatra": "Revati upto 03:23 AM, Sep 01ChaturthiAshwini",
+    "Vara": "Somawara",
+    "Amrit Kalam": "01:01 AM, Sep 01 to 02:36 AM, Sep 01",
+    "Rahu Kalam": "07:34 AM to 09:10 AM",
+    "Yamaganda": "10:46 AM to 12:21 PM",
+    "Gulikai Kalam": "01:57 PM to 03:33 PM",
+    "Festivals": "2nd Chaturmasa Day 7🐄yogurt prohibition fastKajari TeejBahula ChaturthiMaha Sangada Hara ChathurtiHeramba Sankashti"
   },
-  "actions": []
+  "actions": [
+    {
+      "category": "Amla",
+      "item": "eat",
+      "effect": "Do",
+      "description": "Do eat."
+    },
+    {
+      "category": "Heigine",
+      "item": "Haircut",
+      "effect": "Do",
+      "description": "Do Haircut."
+    }
+  ]
 }
